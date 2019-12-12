@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище RealtorModelContainer" CdmEntityContainer="RealtorEntities">
+    <EntitySetMapping Name="Adress">
+      <EntityTypeMapping TypeName="RealtorModel.Adress">
+        <MappingFragment StoreEntitySet="Adress">
+          <ScalarProperty Name="numberApartment" ColumnName="numberApartment" />
+          <ScalarProperty Name="numberHouse" ColumnName="numberHouse" />
+          <ScalarProperty Name="street" ColumnName="street" />
+          <ScalarProperty Name="city" ColumnName="city" />
+          <ScalarProperty Name="idAdress" ColumnName="idAdress" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Apartment">
+      <EntityTypeMapping TypeName="RealtorModel.Apartment">
+        <MappingFragment StoreEntitySet="Apartment">
+          <ScalarProperty Name="square" ColumnName="square" />
+          <ScalarProperty Name="NumberOfRooms" ColumnName="NumberOfRooms" />
+          <ScalarProperty Name="Floor" ColumnName="Floor" />
+          <ScalarProperty Name="IdApartment" ColumnName="IdApartment" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Client">
+      <EntityTypeMapping TypeName="RealtorModel.Client">
+        <MappingFragment StoreEntitySet="Client">
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="MiddleName" ColumnName="MiddleName" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Coordinates">
+      <EntityTypeMapping TypeName="RealtorModel.Coordinates">
+        <MappingFragment StoreEntitySet="Coordinates">
+          <ScalarProperty Name="Longitude" ColumnName="Longitude" />
+          <ScalarProperty Name="latitude" ColumnName="latitude" />
+          <ScalarProperty Name="idCoordinates" ColumnName="idCoordinates" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Deal">
+      <EntityTypeMapping TypeName="RealtorModel.Deal">
+        <MappingFragment StoreEntitySet="Deal">
+          <ScalarProperty Name="IdSentence" ColumnName="IdSentence" />
+          <ScalarProperty Name="IdDemand" ColumnName="IdDemand" />
+          <ScalarProperty Name="idDeal" ColumnName="idDeal" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="demand">
+      <EntityTypeMapping TypeName="RealtorModel.demand">
+        <MappingFragment StoreEntitySet="demand">
+          <ScalarProperty Name="MaxPrice" ColumnName="MaxPrice" />
+          <ScalarProperty Name="MinPrice" ColumnName="MinPrice" />
+          <ScalarProperty Name="TypePropetry" ColumnName="TypePropetry" />
+          <ScalarProperty Name="IdRealtor" ColumnName="IdRealtor" />
+          <ScalarProperty Name="IdClient" ColumnName="IdClient" />
+          <ScalarProperty Name="IdDemand" ColumnName="IdDemand" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="House">
+      <EntityTypeMapping TypeName="RealtorModel.House">
+        <MappingFragment StoreEntitySet="House">
+          <ScalarProperty Name="square" ColumnName="square" />
+          <ScalarProperty Name="NumberOfRooms" ColumnName="NumberOfRooms" />
+          <ScalarProperty Name="Storeys" ColumnName="Storeys" />
+          <ScalarProperty Name="IdHouse" ColumnName="IdHouse" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Land">
+      <EntityTypeMapping TypeName="RealtorModel.Land">
+        <MappingFragment StoreEntitySet="Land">
+          <ScalarProperty Name="square" ColumnName="square" />
+          <ScalarProperty Name="IdLand" ColumnName="IdLand" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Manager">
+      <EntityTypeMapping TypeName="RealtorModel.Manager">
+        <MappingFragment StoreEntitySet="Manager">
+          <ScalarProperty Name="rol" ColumnName="rol" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Login" ColumnName="Login" />
+          <ScalarProperty Name="IdManager" ColumnName="IdManager" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="property">
+      <EntityTypeMapping TypeName="RealtorModel.property">
+        <MappingFragment StoreEntitySet="property">
+          <ScalarProperty Name="Idcoordinates" ColumnName="Idcoordinates" />
+          <ScalarProperty Name="IdAdress" ColumnName="IdAdress" />
+          <ScalarProperty Name="idProperty" ColumnName="idProperty" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Realtor">
+      <EntityTypeMapping TypeName="RealtorModel.Realtor">
+        <MappingFragment StoreEntitySet="Realtor">
+          <ScalarProperty Name="Comission" ColumnName="Comission" />
+          <ScalarProperty Name="MiddleName" ColumnName="MiddleName" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sentence">
+      <EntityTypeMapping TypeName="RealtorModel.Sentence">
+        <MappingFragment StoreEntitySet="Sentence">
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="IdProperty" ColumnName="IdProperty" />
+          <ScalarProperty Name="IdRealtor" ColumnName="IdRealtor" />
+          <ScalarProperty Name="IdClient" ColumnName="IdClient" />
+          <ScalarProperty Name="IdSentence" ColumnName="IdSentence" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
